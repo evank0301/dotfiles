@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pylsp", "jdtls"}
+        ensure_installed = { "lua_ls", "pylsp", "jdtls", "clangd"}
       })
     end
   },
@@ -22,6 +22,9 @@ return {
         capabilities = capabilities
       })
       lspconfig.pylsp.setup({
+        capabilities = capabilities
+      })
+      lspconfig.clangd.setup({
         capabilities = capabilities
       })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

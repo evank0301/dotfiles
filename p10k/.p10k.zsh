@@ -38,12 +38,13 @@
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
   # Prompt colors.
-  local grey='242'
+  local grey='#45475a'
   local red='#FF5C57'
   local yellow='#F3F99D'
-  local blue='#57C7FF'
-  local magenta='#FF6AC1'
-  local cyan='#9AEDFE'
+  local blue='#b4befe'
+  local magenta='#f38ba8'
+  # local cyan='#9AEDFE'
+  local cyan='#FFFFFF'
   local white='#F1F1F0'
 
   # Left prompt segments.
