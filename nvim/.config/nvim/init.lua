@@ -15,9 +15,6 @@ vim.keymap.set('n', 'J', '<C-w>j')
 vim.keymap.set('n', 'K', '<C-w>k')
 
 require("config.lazy")
-require("config.telescope")
-require("config.nvimtreesitter")
-require("config.neotree")
 
 require("lazy").setup("plugins")
 require("leap").create_default_mappings()

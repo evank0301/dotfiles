@@ -5,16 +5,22 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 plugins=(git zsh-syntax-highlighting)
-
 source $ZSH/oh-my-zsh.sh
 
-# zoxide setup
+# Zoxide setup
 eval "$(zoxide init zsh)"
+
+# Lsd aliases
+alias "ls=lsd -lah --group-dirs first"
+alias "l=lsd -l --group-dirs first"
+
+# Home and Work rc files
+[[ ! -f ~/.homerc ]] || source ~/.homerc
+[[ ! -f ~/.workrc ]] || source ~/.workrc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
