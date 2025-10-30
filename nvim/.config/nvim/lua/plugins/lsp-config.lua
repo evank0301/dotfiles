@@ -15,8 +15,10 @@ return {
       vim.lsp.enable("pylsp")
       vim.lsp.enable("clangd")
       vim.lsp.enable("gopls")
+      vim.lsp.enable("bashls")
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
     end
   }

@@ -15,6 +15,4 @@ vim.keymap.set('n', 'J', '<C-w>j')
 vim.keymap.set('n', 'K', '<C-w>k')
 
 require("config.lazy")
-
-require("lazy").setup("plugins")
 require("leap").create_default_mappings()
