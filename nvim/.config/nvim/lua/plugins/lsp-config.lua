@@ -18,8 +18,6 @@ return {
     config = function()
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("pylsp")
-      vim.lsp.enable("clangd")
-      vim.lsp.enable("gopls")
       vim.lsp.enable("bashls")
       vim.lsp.enable("rust-analyzer")
       vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError" })
