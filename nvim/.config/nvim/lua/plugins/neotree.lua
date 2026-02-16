@@ -16,6 +16,6 @@ return {
   },
   config = function(_, opts)
     require("neo-tree").setup(opts)
-    vim.keymap.set('n', '<C-n>', ':Neotree toggle filesystem left<CR>', {})
+    vim.keymap.set("n", "<C-n>", ":Neotree toggle filesystem left<CR>", {})
   end
 }
