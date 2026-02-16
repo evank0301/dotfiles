@@ -1,3 +1,4 @@
+-- Autocmd to enable bashls on buffers opened by the fc command
 vim.api.nvim_create_autocmd("BufEnter", {
   callback = function(args)
     local buf = args.buf
